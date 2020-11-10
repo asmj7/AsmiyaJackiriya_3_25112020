@@ -1,0 +1,101 @@
+*{
+    font-family:'Roboto', sans-serif ;
+}
+body{
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 375px){
+    a{
+        text-decoration: none;
+    }
+    .logo{
+        width: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .localisation{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #E8E8E8;
+        border-top: 3px ridge rgba(128,128,128,0.20);
+    }
+    p.place{
+        margin: 0;
+    }
+    i.fas.fa-map-marker-alt{
+        margin-right: 10px;
+    }
+    div.first-part{
+        background-color: #f4f4f4;
+        padding-bottom: 55px;
+    }
+    h1{
+        text-align: center;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 23px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 35px;
+    }
+    .description{
+        text-align: center;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bouton1{
+        text-align: center;
+        width: 57%;
+        margin-top: 30px;
+        padding: 15px 0px;
+        margin-left: auto;
+        border-radius: 30px;
+        margin-right: auto;
+        background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    }
+    .text1{
+        margin: 0;
+        margin-left: auto;
+        text-align: center;
+        color: white;
+        margin-right: auto;
+        width: fit-content;
+    }
+    .filtres-container{
+        margin-left: 7%;
+    }
+    .filtres-name1, .filtres-name2, .filtres-name3{
+        margin-top: 0;
+        margin-bottom: 0;
+        color: black;
+    }
+    .filtre1, .filtre2, .filtre3{
+        display: flex;
+        padding-left: 30px;
+        padding: 25px 80px 25px 37px;
+        background-color: #f4f4f4;
+        border-radius: 25px;
+        width: 63%;
+    }
+    i.fas.fa-list-ul, i.fas.fa-store, i.fas.fa-mobile-alt{
+        height: fit-content;
+        width: 20%;
+    }
+    i.fas.fa-list-ul,i.fas.fa-mobile-alt{
+        color: #636363;
+    }
+    i.fas.fa-store{
+        color: #9356DC;
+    }
+    .filtre2, .filtre3{
+        margin-top: 20px;
+    }
+}
