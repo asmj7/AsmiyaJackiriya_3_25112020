@@ -62,6 +62,10 @@ body{
         box-shadow: 0 5px 6px 0px #C3C3C3;
         background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
     }
+    .bouton1:hover{
+        filter: brightness(1.03);
+        box-shadow: 0 2px 11px 0px #8D8D8D;
+    }
     .text1{
         margin: 0;
         margin-left: auto;
@@ -81,6 +85,7 @@ body{
     }
     .filtres-container{
         margin-left: 3%;
+        padding-top: 15px;
     }
     .number1,.number2,.number3{
         position: absolute;
@@ -189,7 +194,8 @@ body{
     .place-footer{
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: fit-content;
+        margin-left: 5%;
         padding-bottom: 30px;
     }
     .footer-caption{
@@ -304,6 +310,7 @@ i.far.fa-heart.two{
 }
 .menu{
     margin-left: 10px;
+    margin-bottom: 60px;
 
 }
 .menu-type{
@@ -338,9 +345,36 @@ i.far.fa-heart.two{
     border-radius: 17px;
     padding-bottom: 10px;
     padding-top: 10px;
+    position: relative;
+    overflow: hidden;
     width: 93%;
     padding-right: 15px;
     margin-bottom: 10px;
+}
+.check{
+    display: none;
+    background-color: #99E2D0;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: -70px;
+    top: 0;
+}
+i.fas.fa-check-circle{
+    -webkit-animation: fa-spin 0.4s ;
+  -moz-animation: fa-spin 0.4s ;
+  -o-animation: fa-spin 0.4s ;
+  animation: fa-spin 0.4s;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -9px;
+}
+.place-menu:hover > .check{
+    display: block;
+    right: 0;
 }
 .price-place{
     display: flex;
@@ -349,14 +383,17 @@ i.far.fa-heart.two{
 }
 .bouton2{
     text-align: center;
-        width: 57%;
-        margin-top: 60px;
-        padding: 15px 0px;
-        margin-left: auto;
-        border-radius: 30px;
-        margin-right: auto;
-        box-shadow: 0 5px 6px 0px #C3C3C3;
-        background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    width: 57%;
+    padding: 15px 0px;
+    margin-left: auto;
+    border-radius: 30px;
+    margin-right: auto;
+    box-shadow: 0 5px 6px 0px #C3C3C3;
+    background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+}
+.bouton2:hover{
+    filter: brightness(1.03);
+    box-shadow: 0 2px 11px 0px #8D8D8D;
 }
 .bouton-commander{
     color: white;
