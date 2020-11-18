@@ -1,0 +1,226 @@
+a{
+    text-decoration: none;
+}
+.logo{
+    width: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.localisation{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #E8E8E8;
+    border-top: 3px ridge rgba(128,128,128,0.20);
+}
+p.place{
+    margin: 0;
+}
+i.fas.fa-map-marker-alt{
+    margin-right: 10px;
+}
+div.first-part{
+    background-color: #f4f4f4;
+    padding-bottom: 55px;
+}
+.first-title{
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+}
+.description{
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bouton1{
+    text-align: center;
+    width: 57%;
+    margin-top: 30px;
+    padding: 15px 0px;
+    margin-left: auto;
+    border-radius: 30px;
+    margin-right: auto;
+    box-shadow: 0 5px 6px 0px #C3C3C3;
+    background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+}
+.bouton1:hover{
+    filter: brightness(1.03);
+    box-shadow: 0 2px 11px 0px #8D8D8D;
+}
+.text1{
+    margin: 0;
+    margin-left: auto;
+    text-align: center;
+    color: white;
+    margin-right: auto;
+    width: fit-content;
+}
+.title-and-filtre{
+    margin-left: 4%;
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.filtres-container{
+    margin-left: 3%;
+    padding-top: 15px;
+}
+.number1,.number2,.number3{
+    position: absolute;
+    color: white;
+    margin: 0;
+    border-radius: 30px;
+    padding: 3px 8px;
+    background-color: #9356DC;
+    margin: -2px;
+    left: 4%;
+}
+.filtres-name1, .filtres-name2, .filtres-name3{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    font-weight: bold;
+}
+.filtre1, .filtre2, .filtre3{
+    display: flex;
+    padding-left: 30px;
+    padding: 25px 0px 25px 37px;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    width: 85%;
+    box-shadow: 0 3px 11px 0px #C3C3C3;
+}
+.filtre1:hover, .filtre2:hover, .filtre3:hover{
+    box-shadow: 0 3px 11px 0px #9356DC;
+}
+i.fas.fa-list-ul, i.fas.fa-store, i.fas.fa-mobile-alt{
+    height: fit-content;
+    width: 15%;
+}
+i.fas.fa-list-ul,i.fas.fa-mobile-alt{
+    color: #636363;
+}
+i.fas.fa-store{
+    color: #9356DC;
+}
+.filtre2, .filtre3{
+    margin-top: 20px;
+}
+
+/*****Restaurants*******/ 
+.third-part{
+    background-color: #f4f4f4;
+    padding-bottom: 40px;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+}
+.restaurant-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+}
+.gallery-menu{
+    padding-top: 15px;
+}
+.new{
+    padding: 6px 15px;
+    width: fit-content;
+    background-color: #99E2D0;
+    position: absolute;
+    margin-left: 235px;
+    margin-top: 16px;
+}
+.p-new{
+    margin: 0;
+    color: #3D8D7A;
+}
+i.far.fa-heart{
+    font-size: 23px;
+    color: black;
+    position: absolute;
+    margin-left: 308px;
+}
+h3{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+div.overlay{
+    padding-top: 15px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 14px;
+}
+.p-caption{
+    margin: 0;
+    color: black;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.grid-image{
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0
+}
+footer{
+    background-color: #3A3A3A;
+}
+.place-footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-left: 5%;
+    padding-bottom: 30px;
+}
+.footer-caption{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+h4{
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.icon-footer{
+    display: flex;
+}
+i.fas.fa-utensils{
+    margin-right: 12px;
+    margin-left: 5px;
+    color: white;
+    font-size: 14px;
+    margin-top: 2px;
+}
+i.fas.fa-hands-helping{
+    margin-right: 11px;
+    color: white;
+    font-size: 14px;
+    margin-top: 2px;
+}
