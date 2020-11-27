@@ -235,14 +235,14 @@ body{
 
 
 
-    /***** Heart animation try **********
+    /***** Heart animation try **********/
     i.far.fa-heart{
         position: relative;
         overflow: hidden;
     }
-    i.far.fa-heart::before{
+    /*i.far.fa-heart::before{
         overflow: hidden;
-    }
+    }*/
     i.far.fa-heart::after{
         content: " ";
         position: absolute;
@@ -253,7 +253,6 @@ body{
         top: 90%;
         border-radius: 45%;
         animation: spin 4s ease-in-out;
-        overflow: hidden;
     }
 
 @keyframes spin{
@@ -263,7 +262,7 @@ body{
     100%{
         transform: translateY(-100%) rotate(500deg);
     }
-}*/
+}
 
 /******** SECOND RESTAURANT *************/
 section.menu-part{
@@ -312,7 +311,8 @@ i.far.fa-heart.two{
     font-size: 22px;
     margin-left: 0;
     margin-top: 5px;
-    position: unset;
+    position: aboslute;
+    right: 7%;
 }
 .menu{
     margin-left: 10px;
@@ -452,5 +452,41 @@ i.fas.fa-check-circle{
 .bouton-commander{
     color: white;
     margin: 0;
+}
+/****  svg try*****
+svg.heart{
+    margin-left: 306px;
+    position: absolute;
+}
+svg.heart::before{
+    content: "";
+}
+svg.heart::after{
+    content: " ";
+    background-image: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    height: 200%;
+    width: 200%;
+    right: -50%;
+    top: 90%;
+    border-radius: 45%;
+    animation: spin 4s ease-in-out;
+}
+
+@keyframes spin{
+0%{
+    transform: translateY(0) rotate(0deg);
+}
+100%{
+    transform: translateY(-100%) rotate(500deg);
+}
+}*/
+
+/* background-color try */
+.heart{
+    /*background-image: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);*/
+    transition: ease-in-out 2s;
+    overflow: hidden;
+    fill: #ff79da;
+    stroke: #ff79da;
 }
 }
