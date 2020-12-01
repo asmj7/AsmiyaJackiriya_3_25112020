@@ -106,7 +106,7 @@ h2{
     box-shadow: 0 3px 11px 0px #C3C3C3;
 }
 .filtre1:hover, .filtre2:hover, .filtre3:hover{
-    box-shadow: 0 3px 11px 0px #9356DC;
+    box-shadow: 0 3px 11px 0px #9356DC, 0px -9px 10px -8px #FF79DA;
 }
 i.fas.fa-list-ul, i.fas.fa-store, i.fas.fa-mobile-alt{
     height: fit-content;
@@ -146,7 +146,7 @@ a{
     width: fit-content;
     background-color: #99E2D0;
     position: absolute;
-    margin-left: 235px;
+    right: 7%;
     margin-top: 16px;
 }
 .p-new{
@@ -155,9 +155,21 @@ a{
 }
 i.far.fa-heart{
     font-size: 23px;
-    color: black;
+    cursor: pointer;
     position: absolute;
-    margin-left: 308px;
+    right: 7%;
+    margin: 3px;
+}
+i.fa.fa-heart{
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    right: 7%;
+    margin: 3px;
+}
+i.far.fa-heart:active > i.fa.fa-heart{
+    display: block;
+    color: rgb(255, 0, 0);
 }
 h3{
     color: black;
@@ -224,4 +236,25 @@ i.fas.fa-hands-helping{
     color: white;
     font-size: 14px;
     margin-top: 2px;
+}
+/**** heart test ***
+i.far.fa-heart{
+    font-size: 23px;
+    color: black;
+    position: absolute;
+    margin-left: 308px;
+    right: 7%;
+    margin: 2px;
+}
+i.fa.fa-heart{
+    visibility: hidden;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    right: 7%;
+    margin: 3px;
+}
+i.far.fa-heart:active + i.fa.fa-heart{
+    visibility: visible;
+    color: red;
 }

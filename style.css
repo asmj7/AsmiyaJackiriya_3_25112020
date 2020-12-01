@@ -113,7 +113,7 @@ body{
         box-shadow: 0 3px 11px 0px #C3C3C3;
     }
     .filtre1:hover, .filtre2:hover, .filtre3:hover{
-        box-shadow: 0 3px 11px 0px #9356DC;
+        box-shadow: 0 3px 11px 0px #9356DC, 0px -9px 10px -8px #FF79DA;
     }
     i.fas.fa-list-ul, i.fas.fa-store, i.fas.fa-mobile-alt{
         height: fit-content;
@@ -153,21 +153,36 @@ body{
         width: fit-content;
         background-color: #99E2D0;
         position: absolute;
-        margin-left: 235px;
+        right: 7%;
         margin-top: 16px;
     }
     .p-new{
         margin: 0;
         color: #3D8D7A;
-    }
+    } 
+    /*********** ANIMATION TRY *****************/
     i.far.fa-heart{
         font-size: 23px;
-        color: black;
+        cursor: pointer;
         position: absolute;
-        margin-left: 308px;
+        right: 7%;
+        margin: 3px;
     }
+    i.fa.fa-heart{
+        color: white;
+        font-size: 23px;
+        position: absolute;
+        right: 7%;
+        margin: 3px;
+    }
+    i.far.fa-heart:active > i.fa.fa-heart{
+        display: block;
+        color: rgb(255, 0, 0);
+    }
+    /*********** ANIMATION TRY FINISH *****************/
     h3{
         color: black;
+        width: fit-content;
         margin-top: 0;
         margin-bottom: 5px;
         margin-left: 15px;
@@ -179,6 +194,7 @@ body{
         padding-bottom: 14px;
     }
     .p-caption{
+        width: fit-content;
         margin: 0;
         color: black;
         margin-left: 15px;
@@ -235,14 +251,14 @@ body{
 
 
 
-    /***** Heart animation try **********/
+    /***** Heart animation try **********
     i.far.fa-heart{
         position: relative;
         overflow: hidden;
     }
     /*i.far.fa-heart::before{
         overflow: hidden;
-    }*/
+    }*
     i.far.fa-heart::after{
         content: " ";
         position: absolute;
@@ -262,7 +278,7 @@ body{
     100%{
         transform: translateY(-100%) rotate(500deg);
     }
-}
+}*/
 
 /******** SECOND RESTAURANT *************/
 section.menu-part{
@@ -452,41 +468,5 @@ i.fas.fa-check-circle{
 .bouton-commander{
     color: white;
     margin: 0;
-}
-/****  svg try*****
-svg.heart{
-    margin-left: 306px;
-    position: absolute;
-}
-svg.heart::before{
-    content: "";
-}
-svg.heart::after{
-    content: " ";
-    background-image: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-    height: 200%;
-    width: 200%;
-    right: -50%;
-    top: 90%;
-    border-radius: 45%;
-    animation: spin 4s ease-in-out;
-}
-
-@keyframes spin{
-0%{
-    transform: translateY(0) rotate(0deg);
-}
-100%{
-    transform: translateY(-100%) rotate(500deg);
-}
-}*/
-
-/* background-color try */
-.heart{
-    /*background-image: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);*/
-    transition: ease-in-out 2s;
-    overflow: hidden;
-    fill: #ff79da;
-    stroke: #ff79da;
 }
 }
