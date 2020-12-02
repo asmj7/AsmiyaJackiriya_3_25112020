@@ -168,15 +168,14 @@ body{
         right: 7%;
         margin: 3px;
     }
-    i.fa.fa-heart{
+    i.fa.fa-heart::before{
         color: white;
         font-size: 23px;
         position: absolute;
         right: 7%;
         margin: 3px;
     }
-    i.far.fa-heart:active > i.fa.fa-heart{
-        display: block;
+    i.far.fa-heart:active > i.fa.fa-heart::after{
         color: rgb(255, 0, 0);
     }
     /*********** ANIMATION TRY FINISH *****************/

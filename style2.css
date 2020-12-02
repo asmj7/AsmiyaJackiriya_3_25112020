@@ -1,4 +1,6 @@
 /***************** HOME ************/
+@media screen and (max-width: 1400px) and (min-width: 800px){
+
 a{
     text-decoration: none;
 }
@@ -28,6 +30,21 @@ div.first-part{
     background-color: #f4f4f4;
     padding-bottom: 55px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .first-title{
     text-align: center;
     width: 60%;
@@ -46,7 +63,7 @@ div.first-part{
 }
 .bouton1{
     text-align: center;
-    width: 57%;
+    width: 16%;
     margin-top: 30px;
     padding: 15px 0px;
     margin-left: auto;
@@ -68,27 +85,29 @@ div.first-part{
     width: fit-content;
 }
 .title-and-filtre{
-    margin-left: 4%;
-    padding-top: 35px;
-    padding-bottom: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 15px;
+    padding-bottom: 45px;
 }
 h2{
     margin-top: 0;
     margin-bottom: 0;
 }
 .filtres-container{
-    margin-left: 3%;
+    width: 100%;
     padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 .number1,.number2,.number3{
     position: absolute;
     color: white;
-    margin: 0;
     border-radius: 30px;
     padding: 3px 8px;
     background-color: #9356DC;
     margin: -2px;
-    left: 4%;
+    transform: translate(-190%, 0);
 }
 .filtres-name1, .filtres-name2, .filtres-name3{
     margin-top: 0;
@@ -102,7 +121,7 @@ h2{
     padding: 25px 0px 25px 37px;
     background-color: #f4f4f4;
     border-radius: 25px;
-    width: 85%;
+    width: 20%;
     box-shadow: 0 3px 11px 0px #C3C3C3;
 }
 .filtre1:hover, .filtre2:hover, .filtre3:hover{
@@ -118,11 +137,8 @@ i.fas.fa-list-ul,i.fas.fa-mobile-alt{
 i.fas.fa-store{
     color: #9356DC;
 }
-.filtre2, .filtre3{
-    margin-top: 20px;
-}
 
-/*****Restaurants*******/ 
+/*****Restaurants*******/
 .third-part{
     background-color: #f4f4f4;
     padding-bottom: 40px;
@@ -132,11 +148,23 @@ a{
     text-transform: none;
 }
 .restaurant-container{
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
     width: 90%;
     padding-top: 30px;
+}
+.first-restaurant, .second-restaurant, .third-restaurant, .fourth-restaurant{
+    width: 20%;
+    transition: all .2s ease-in-out;
+}
+.first-restaurant:hover, .second-restaurant:hover, .third-restaurant:hover, .fourth-restaurant:hover{
+    transform: scale(1.1);
+}
+.restaurant{
+    position: absolute;
+    transform: translate(0px, -22px);
 }
 .gallery-menu{
     padding-top: 15px;
@@ -192,7 +220,7 @@ div.overlay{
 .grid-image{
     display: block;
     width: 100%;
-    height: 180px;
+    height: 145px;
     object-fit: cover;
     border-radius: 20px 20px 0 0
 }
@@ -257,4 +285,5 @@ i.fa.fa-heart{
 i.far.fa-heart:active + i.fa.fa-heart{
     visibility: visible;
     color: red;
+}*/
 }
