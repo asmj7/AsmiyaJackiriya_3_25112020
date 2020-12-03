@@ -1,5 +1,6 @@
 *{
     font-family:'Roboto', sans-serif ;
+    margin: 0;
 }
 body{
     margin: 0 auto;
@@ -128,6 +129,10 @@ body{
     .filtre2, .filtre3{
         margin-top: 20px;
     }
+    .steps{
+        display: flex;
+        width: 90%;
+    }
 
     /*****Restaurants*******/ 
     .third-part{
@@ -168,14 +173,14 @@ body{
         right: 7%;
         margin: 3px;
     }
-    i.fa.fa-heart::before{
+    i.fa.fa-heart{
         color: white;
         font-size: 23px;
         position: absolute;
         right: 7%;
         margin: 3px;
     }
-    i.far.fa-heart:active > i.fa.fa-heart::after{
+    i.far.fa-heart:active > i.fa.fa-heart{
         color: rgb(255, 0, 0);
     }
     /*********** ANIMATION TRY FINISH *****************/

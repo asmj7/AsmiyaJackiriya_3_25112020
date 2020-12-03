@@ -1,5 +1,5 @@
-/***************** HOME ************/
-@media screen and (max-width: 1400px) and (min-width: 800px){
+/***************** HOME PAGE'S MEDIA QUERY ************/
+@media screen and (max-width: 1400px) and (min-width: 376px) {
 
 a{
     text-decoration: none;
@@ -30,21 +30,6 @@ div.first-part{
     background-color: #f4f4f4;
     padding-bottom: 55px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .first-title{
     text-align: center;
     width: 60%;
@@ -63,7 +48,7 @@ div.first-part{
 }
 .bouton1{
     text-align: center;
-    width: 16%;
+    width: 225px;
     margin-top: 30px;
     padding: 15px 0px;
     margin-left: auto;
@@ -136,6 +121,10 @@ i.fas.fa-list-ul,i.fas.fa-mobile-alt{
 }
 i.fas.fa-store{
     color: #9356DC;
+}
+.steps{
+    display: flex;
+    width: 90%;
 }
 
 /*****Restaurants*******/
@@ -265,7 +254,7 @@ i.fas.fa-hands-helping{
     font-size: 14px;
     margin-top: 2px;
 }
-/**** heart test ***
+/**** heart test ***/
 i.far.fa-heart{
     font-size: 23px;
     color: black;
@@ -282,8 +271,29 @@ i.fa.fa-heart{
     right: 7%;
     margin: 3px;
 }
-i.far.fa-heart:active + i.fa.fa-heart{
+i.far.fa-heart:hover > i.fa.fa-heart{
     visibility: visible;
     color: red;
-}*/
+}
+}
+@media screen and (max-width: 1304px) and (min-width: 376px) {
+    .title-and-filtre{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filtres-container{
+        display: block;
+    }
+    .filtre1, .filtre2, .filtre3{
+        width: 93%;
+    }
+    .steps{
+        width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filtre2, .filtre3{
+        margin-top: 20px;
+    }
 }
