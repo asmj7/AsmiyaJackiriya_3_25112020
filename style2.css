@@ -1,6 +1,4 @@
 /***************** HOME PAGE'S MEDIA QUERY ************/
-@media screen and (max-width: 1400px) and (min-width: 376px) {
-
 a{
     text-decoration: none;
 }
@@ -114,7 +112,7 @@ h2{
 }
 i.fas.fa-list-ul, i.fas.fa-store, i.fas.fa-mobile-alt{
     height: fit-content;
-    width: 15%;
+    width: 32px;
 }
 i.fas.fa-list-ul,i.fas.fa-mobile-alt{
     color: #636363;
@@ -157,6 +155,10 @@ a{
 }
 .gallery-menu{
     padding-top: 15px;
+}
+.grid-restaurant{
+    display: flex;
+    justify-content: space-between;
 }
 .new{
     padding: 6px 15px;
@@ -275,18 +277,39 @@ i.far.fa-heart:hover > i.fa.fa-heart{
     visibility: visible;
     color: red;
 }
-}
+
 @media screen and (max-width: 1304px) and (min-width: 376px) {
+   .first-grid{
+    display: grid;
+    grid-template-columns: 30% auto;
+   }
+   .grid-restaurant{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 25px;
+   }
+   .first-restaurant, .second-restaurant, .third-restaurant, .fourth-restaurant{
+       width: 100%;
+   }
     .title-and-filtre{
-        width: 50%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
     .filtres-container{
         display: block;
+        width: 100%;
     }
     .filtre1, .filtre2, .filtre3{
-        width: 93%;
+        width: auto;
+    }
+    .filtre2, .filtre3{
+        margin-top: 20px;
+    }
+    .function{
+        transform: translateY(-7px);
     }
     .steps{
         width: 210px;
@@ -295,5 +318,28 @@ i.far.fa-heart:hover > i.fa.fa-heart{
     }
     .filtre2, .filtre3{
         margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1144px){
+    .title-and-filtre{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 852px){
+    .first-grid{
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+    }
+}
+@media screen and (max-width: 825px){
+    .grid-restaurant{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: unset;
+    }
+    .first-restaurant, .second-restaurant, .third-restaurant, .fourth-restaurant{
+        transition: none;
+    }
+    .first-restaurant:hover, .second-restaurant:hover, .third-restaurant:hover, .fourth-restaurant:hover{
+        transform: none;
     }
 }

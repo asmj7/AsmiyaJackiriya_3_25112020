@@ -433,7 +433,7 @@ p.p-number{
     to {right: 75px;}
 }
 i.fas.fa-check-circle{
-    -webkit-animation: fa-spin 0.7s ;
+    -webkit-animation: fa-spin 0.7s;
     -moz-animation: fa-spin 0.7s ;
     -o-animation: fa-spin 0.7s;
     animation: fa-spin 0.7s;
