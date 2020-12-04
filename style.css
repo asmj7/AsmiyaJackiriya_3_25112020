@@ -76,6 +76,7 @@ body{
         width: fit-content;
     }
     .title-and-filtre{
+        width: 88%;
         margin-left: 4%;
         padding-top: 35px;
         padding-bottom: 60px;
@@ -85,6 +86,8 @@ body{
         margin-bottom: 0;
     }
     .filtres-container{
+        width: 100%;
+        display: block;
         margin-left: 3%;
         padding-top: 15px;
     }
@@ -110,7 +113,7 @@ body{
         padding: 25px 0px 25px 37px;
         background-color: #f4f4f4;
         border-radius: 25px;
-        width: 85%;
+        width: auto;
         box-shadow: 0 3px 11px 0px #C3C3C3;
     }
     .filtre1:hover, .filtre2:hover, .filtre3:hover{

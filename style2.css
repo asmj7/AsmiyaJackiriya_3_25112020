@@ -2,6 +2,11 @@
 a{
     text-decoration: none;
 }
+/*.container{
+    width: 1345px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
 .logo{
     width: 140px;
     display: block;
@@ -43,6 +48,7 @@ div.first-part{
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
 }
 .bouton1{
     text-align: center;
@@ -98,7 +104,7 @@ h2{
     color: black;
     font-weight: bold;
 }
-.filtre1, .filtre2, .filtre3{
+.filtre1, .filtre2, .filtre3{ 
     display: flex;
     padding-left: 30px;
     padding: 25px 0px 25px 37px;
@@ -144,57 +150,46 @@ a{
 }
 .first-restaurant, .second-restaurant, .third-restaurant, .fourth-restaurant{
     width: 20%;
-    transition: all .2s ease-in-out;
-}
-.first-restaurant:hover, .second-restaurant:hover, .third-restaurant:hover, .fourth-restaurant:hover{
-    transform: scale(1.1);
 }
 .restaurant{
     position: absolute;
     transform: translate(0px, -22px);
 }
-.gallery-menu{
-    padding-top: 15px;
-}
 .grid-restaurant{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+}
+.gallery-menu:hover{
+    box-shadow: 0 3px 11px 0px #9356DC, 0px -9px 10px -8px #FF79DA;
+    border-radius: 20px 20px;
 }
 .new{
     padding: 6px 15px;
     width: fit-content;
     background-color: #99E2D0;
     position: absolute;
-    right: 7%;
+    margin-left: 10%;
     margin-top: 16px;
 }
 .p-new{
     margin: 0;
     color: #3D8D7A;
 }
+.heart-and-title{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 i.far.fa-heart{
-    font-size: 23px;
     cursor: pointer;
-    position: absolute;
-    right: 7%;
-    margin: 3px;
-}
-i.fa.fa-heart{
-    color: white;
-    font-size: 23px;
-    position: absolute;
-    right: 7%;
-    margin: 3px;
-}
-i.far.fa-heart:active > i.fa.fa-heart{
-    display: block;
-    color: rgb(255, 0, 0);
 }
 h3{
     color: black;
     margin-top: 0;
     margin-bottom: 5px;
-    margin-left: 15px;
 }
 div.overlay{
     padding-top: 15px;
@@ -256,13 +251,10 @@ i.fas.fa-hands-helping{
     font-size: 14px;
     margin-top: 2px;
 }
-/**** heart test ***/
+/*************** heart test ***********/
 i.far.fa-heart{
     font-size: 23px;
     color: black;
-    position: absolute;
-    margin-left: 308px;
-    right: 7%;
     margin: 2px;
 }
 i.fa.fa-heart{
@@ -277,6 +269,7 @@ i.far.fa-heart:hover > i.fa.fa-heart{
     visibility: visible;
     color: red;
 }
+/*********** tes heart end **********/
 
 @media screen and (max-width: 1304px) and (min-width: 376px) {
    .first-grid{
@@ -319,10 +312,42 @@ i.far.fa-heart:hover > i.fa.fa-heart{
     .filtre2, .filtre3{
         margin-top: 20px;
     }
+    .new{
+        margin-left: 22%;
+    }
+    .place-footer{
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 1220px){
+    .new{
+        margin-left: 21%;
+    }
 }
 @media screen and (max-width: 1144px){
     .title-and-filtre{
         width: 65%;
+    }
+    .new{
+        margin-left: 22%;
+    }
+    .place-footer{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 1090px){
+    .new{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 984px){
+    .new{
+        margin-left: 19%;
+    }
+}
+@media screen and (max-width: 900px){
+    .new{
+        margin-left: 17%;
     }
 }
 @media screen and (max-width: 852px){
@@ -330,16 +355,31 @@ i.far.fa-heart:hover > i.fa.fa-heart{
         grid-template-rows: auto auto;
         grid-template-columns: none;
     }
-    .first-restaurant, .second-restaurant, .third-restaurant, .fourth-restaurant{
-        transition: none;
+    .new{
+        margin-left: 29%;
     }
-    .first-restaurant:hover, .second-restaurant:hover, .third-restaurant:hover, .fourth-restaurant:hover{
-        transform: none;
+}
+@media screen and (max-width: 732px){
+    .new{
+        margin-left: 27%;
+    }
+}
+@media screen and (max-width: 640px){
+    .new{
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 572px){
+    .new{
+        margin-left: 23%;
     }
 }
 @media screen and (max-width: 525px){
     .grid-restaurant{
         grid-template-columns: repeat(1, 1fr);
-        row-gap: unset;
+        row-gap: 15px;
+    }
+    .new{
+        margin-left: 65%;
     }
 }
