@@ -7,7 +7,7 @@
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
-        width: 95%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -34,7 +34,7 @@
         padding-bottom: 30px;
         padding-top: 20px;
         width: 100%;
-        transform: translateY(-3%);
+        transform: translateY(-10%);
     }
     .second-title{
         font-family: 'Shrikhand', cursive;
@@ -49,9 +49,17 @@
         margin-left: 0;
         margin-top: 5px;
     }
+    .entrees, .Plats, .Desserts{
+        width: 25%;
+    }
     .menu{
-        margin-left: 10px;
-        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 35px;
+        margin-bottom: 50px;
     
     }
     .menu-type{
@@ -71,13 +79,17 @@
     }
     .menu-title{
         margin-top: 0;
+        margin-left: 15px;
+        font-size: 16px;
     }
     .food-container{
         margin-bottom: 35px;
+        margin-top: 20px;
     }
     .entree-caption{
         margin: 0;
         width: 90%;
+        margin-left: 5px;
     }
     p.p-number{
         position: absolute;
@@ -97,8 +109,95 @@
         padding-top: 10px;
         position: relative;
         overflow: hidden;
-        width: 93%;
+        width: 95%;
         padding-right: 15px;
         margin-bottom: 10px;
+    }
+    .place-menu.first{
+        animation: animDiv 1.2s ease-in-out 0.7s;
+        animation-fill-mode: both;
+    }
+    @keyframes animDiv {
+        0%   {top:10px;
+              opacity:0;
+        }
+        100%  {top:0px;
+               opacity:1;
+        }
+    }
+    .place-menu.second{
+        animation: animDiv 1s ease-in-out 0.9s;
+        animation-fill-mode: both;
+    }
+    .place-menu.third{
+        animation: animDiv 1s ease-in-out 1.3s;
+        animation-fill-mode: both;
+    }
+    .check{
+        background-color: #99E2D0;
+        height: 100%;
+        width: 20%;
+        position: absolute;
+        top: 0;
+        right: -70px;
+    }
+    .place-menu:hover > .check{
+        animation: mymove 0.3s linear;
+        animation-delay:0s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes mymove {
+        from {right: -70px;}
+        to {right: 0px;}
+    }
+    .place-menu:hover > p.p-number{
+        animation: movetwo 0.3s linear;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes movetwo { 
+        from {right: 15px;}
+        to {right: 75px;}
+    }
+    i.fas.fa-check-circle{
+        -webkit-animation: fa-spin 0.7s;
+        -moz-animation: fa-spin 0.7s ;
+        -o-animation: fa-spin 0.7s;
+        animation: fa-spin 0.7s;
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        left: 50%;
+        margin: -9px;
+    }
+    .place-menu:hover > .i.fas.fa-check-circle{
+        -webkit-animation: fa-spin 1s ;
+        -moz-animation: fa-spin 1s ;
+        -o-animation: fa-spin 1s;
+        animation: fa-spin 1s;
+    }
+    .price-place{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 4%;
+    }
+    .bouton2{
+        text-align: center;
+        width: 215px;
+        padding: 15px 0px;
+        margin-left: auto;
+        border-radius: 30px;
+        margin-right: auto;
+        box-shadow: 0 5px 6px 0px #C3C3C3;
+        background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    }
+    .bouton2:hover{
+        filter: brightness(1.03);
+        box-shadow: 0 2px 11px 0px #8D8D8D;
+    }
+    .bouton-commander{
+        color: white;
+        margin: 0;
     }
 }

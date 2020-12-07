@@ -2,6 +2,10 @@
 a{
     text-decoration: none;
 }
+* {
+    margin: 0;
+    padding: 0;
+  } 
 /*.container{
     width: 1345px;
     margin-left: auto;
@@ -140,6 +144,13 @@ a{
     text-decoration: none;
     text-transform: none;
 }
+.grid-restaurant{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    column-gap: 35px;
+    margin-top: 20px;
+}
 .restaurant-container{
     display: flex;
     margin-left: auto;
@@ -148,17 +159,9 @@ a{
     width: 90%;
     padding-top: 30px;
 }
-.first-restaurant, .second-restaurant, .third-restaurant, .fourth-restaurant{
-    width: 20%;
-}
 .restaurant{
     position: absolute;
     transform: translate(0px, -22px);
-}
-.grid-restaurant{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
 }
 .gallery-menu:hover{
     box-shadow: 0 3px 11px 0px #9356DC, 0px -9px 10px -8px #FF79DA;
@@ -169,7 +172,7 @@ a{
     width: fit-content;
     background-color: #99E2D0;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 12%;
     margin-top: 16px;
 }
 .p-new{
@@ -254,23 +257,48 @@ i.fas.fa-hands-helping{
 /*************** heart test ***********/
 i.far.fa-heart{
     font-size: 23px;
-    color: black;
+    color: unset;
     margin: 2px;
 }
 i.fa.fa-heart{
-    visibility: hidden;
-    color: white;
+    display: none;
     font-size: 22px;
-    position: absolute;
-    right: 7%;
     margin: 3px;
+    cursor: pointer;
 }
-i.far.fa-heart:hover > i.fa.fa-heart{
-    visibility: visible;
+i.far.fa-heart:hover{
+    display: none;
+}
+i.far.fa-heart:hover + i.fa.fa-heart{
+    display: block;
     color: red;
+    animation: color 2s ease-in-out;
 }
-/*********** tes heart end **********/
-
+/*********** test heart end **********/
+.place-menu.first{
+    animation: animDiv 1.2s ease-in-out 0.7s;
+    animation-fill-mode: both;
+}
+.place-menu.second{
+    animation: animDiv 1s ease-in-out 0.9s;
+    animation-fill-mode: both;
+}
+.place-menu.third{
+    animation: animDiv 1s ease-in-out 1.3s;
+    animation-fill-mode: both;
+}
+.place-menu.fourth{
+    animation: animDiv 1s ease-in-out 1.6s;
+    animation-fill-mode: both;
+}
+@keyframes animDiv {
+    0%   {top:10px;
+          opacity:0;
+    }
+    100%  {top:0px;
+           opacity:1;
+    }
+}
 @media screen and (max-width: 1304px) and (min-width: 376px) {
    .first-grid{
     display: grid;
@@ -329,7 +357,7 @@ i.far.fa-heart:hover > i.fa.fa-heart{
         width: 65%;
     }
     .new{
-        margin-left: 22%;
+        margin-left: 20%;
     }
     .place-footer{
         margin-left: 5%;
@@ -383,3 +411,64 @@ i.far.fa-heart:hover > i.fa.fa-heart{
         margin-left: 65%;
     }
 }
+/*********** loading animation ********************
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #4A0939;
+}
+.loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #240229;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+      10px 10px 10px rgba(0, 0, 0, 0.4),
+      inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+      inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    z-index: 10;
+    background: #4A0939;
+    border-radius: 50%;
+    border: 2px solid #240229;
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+      inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      -225deg,
+      #9356DC 0%,
+      #9356DC 50%,
+      #FF79DA 100%
+    );
+  
+    filter: blur(20px);
+    z-index: -1;
+    animation: animate 0.5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }*/
