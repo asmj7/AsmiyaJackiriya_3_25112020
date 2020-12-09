@@ -322,3 +322,22 @@
                opacity:1;
         }
     }
+@media screen and (max-width: 1010px) {
+    .menu{
+        display: block;
+    }
+    div.entrees, div.Plats, div.Desserts{
+        width: 100%;
+    }
+    div.check{
+        right: -174px;
+    }
+    @keyframes mymove {
+        from {right: -174px;}
+        to {right: 0px;}
+    }
+    @keyframes movetwo { 
+        from {right: 15px;}
+        to {right: 178px;}
+    }
+}
