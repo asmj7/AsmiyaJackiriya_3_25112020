@@ -272,32 +272,6 @@
         font-size: 14px;
         margin-top: 2px;
     }
-    /*************** heart test ***********/
-    i.far.fa-heart{
-        position: absolute;
-        cursor: pointer;
-        font-size: 23px;
-        color: unset;
-        margin: 2px;
-        right: 5%;
-    }
-    i.fas.fa-heart{
-        display: none;
-    }
-    i.far.fa-heart:hover{
-        display: none;
-    }
-    .far:hover ~ .fas{
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        color: red;
-        right: 5%;
-        animation: color 2s ease-in-out;
-        font-size: 22px;
-        margin: 3px;
-    }
-    /*********** test heart end **********/
     .place-menu.first{
         animation: animDiv 1.2s ease-in-out 0.7s;
         animation-fill-mode: both;
@@ -341,3 +315,6 @@
         to {right: 178px;}
     }
 }
+
+
+
