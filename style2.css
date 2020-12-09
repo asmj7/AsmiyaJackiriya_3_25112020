@@ -217,7 +217,7 @@ i.far.fa-heart:hover{
     margin: 3px;
 }
 /*********** test heart end **********/
-@media screen and (max-width: 1304px) and (min-width: 376px) {
+@media screen and (max-width: 1304px){
    .first-grid{
     display: grid;
     grid-template-columns: 30% auto;
@@ -280,6 +280,11 @@ i.far.fa-heart:hover{
     .grid-restaurant{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 15px;
+    }
+}
+@media screen and (max-width: 379px){
+    .title-and-filtre{
+        width: 88%;
     }
 }
 

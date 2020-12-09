@@ -91,15 +91,9 @@ body{
         margin-left: 3%;
         padding-top: 15px;
     }
-    .number1,.number2,.number3{
-        position: absolute;
-        color: white;
-        margin: 0;
-        border-radius: 30px;
-        padding: 3px 8px;
-        background-color: #9356DC;
-        margin: -2px;
+    p.number1,p.number2,p.number3{
         left: 4%;
+        transform: translateX(30%);
     }
     .filtres-name1, .filtres-name2, .filtres-name3{
         margin-top: 0;
@@ -114,6 +108,7 @@ body{
         background-color: #f4f4f4;
         border-radius: 25px;
         width: auto;
+        align-items: center;
         box-shadow: 0 3px 11px 0px #C3C3C3;
     }
     .filtre1:hover, .filtre2:hover, .filtre3:hover{
@@ -132,9 +127,11 @@ body{
     .filtre2, .filtre3{
         margin-top: 20px;
     }
-    .steps{
+    div.steps{
         display: flex;
         width: 90%;
+        margin-right: auto;
+        margin-left: unset;
     }
 
     /*****Restaurants*******/ 
