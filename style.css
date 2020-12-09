@@ -256,6 +256,7 @@ body{
 /******** SECOND RESTAURANT *************/
 section.menu-part{
     background-color: #f2f2f2;
+    height: 1055px;
 }
 .restaurant-name{
     display: flex;
@@ -295,13 +296,6 @@ div.background-image{
     margin-top: 0;
     font-weight: 100;
 
-}
-i.far.fa-heart.two{
-    font-size: 22px;
-    margin-left: 0;
-    margin-top: 5px;
-    position: aboslute;
-    right: 7%;
 }
 .menu{
     display: block;
