@@ -64,12 +64,28 @@
         margin-left: 5px;
         position: relative;
     }
-    .menu-type::before{
+    .menu-type.one::before{
         content: '';
         display: block;
         position: absolute;
         bottom: 0;
-        width: 11%;
+        width: 32px;
+        border-bottom: 3px solid #99E2D0;
+    }
+    .menu-type.two::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 27px;
+        border-bottom: 3px solid #99E2D0;
+    }
+    .menu-type.three::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 40px;
         border-bottom: 3px solid #99E2D0;
     }
     .menu-title{
@@ -127,14 +143,6 @@
     .place-menu.third{
         animation: animDiv 1s ease-in-out 1.3s;
         animation-fill-mode: both;
-    }
-    .check{
-        background-color: #99E2D0;
-        position: absolute;
-        height: 100%;
-        width: 20%;
-        top: 0;
-        right: -70px;
     }
     .place-menu:hover  .check{
         animation: mymove 0.3s linear;
@@ -201,7 +209,12 @@
         width: 30%;
     }
     div.check{
-        right: -73px;
+        background-color: #99E2D0;
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        top: 0;
+        right: -76px;
     }
     h3{
         color: black;
