@@ -27,8 +27,11 @@ a{
     background-color: #E8E8E8;
     border-top: 3px ridge rgba(128,128,128,0.20);
 }
-p.place{
-    margin: 0;
+input{
+    background-color: #E8E8E8;
+    border: none;
+    width: 110px;
+    font-size: 15px;
 }
 i.fas.fa-map-marker-alt{
     margin-right: 10px;
