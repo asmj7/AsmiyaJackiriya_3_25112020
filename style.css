@@ -256,37 +256,6 @@ body{
         margin-top: 2px;
     }
 
-
-
-    /***** Heart animation try **********
-    i.far.fa-heart{
-        position: relative;
-        overflow: hidden;
-    }
-    /*i.far.fa-heart::before{
-        overflow: hidden;
-    }*
-    i.far.fa-heart::after{
-        content: " ";
-        position: absolute;
-        background-image: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-        height: 200%;
-        width: 200%;
-        right: -50%;
-        top: 90%;
-        border-radius: 45%;
-        animation: spin 4s ease-in-out;
-    }
-
-@keyframes spin{
-    0%{
-        transform: translateY(0) rotate(0deg);
-    }
-    100%{
-        transform: translateY(-100%) rotate(500deg);
-    }
-}*/
-
 /******** SECOND RESTAURANT *************/
 section.menu-part{
     background-color: #f2f2f2;
@@ -416,23 +385,13 @@ p.p-number{
     from {right: 15px;}
     to {right: 75px;}
 }
-i.fas.fa-check-circle{
-    -webkit-animation: fa-spin 0.7s;
-    -moz-animation: fa-spin 0.7s ;
-    -o-animation: fa-spin 0.7s;
-    animation: fa-spin 0.7s;
+i.fas.fa-check-circle:hover{
     color: white;
     position: absolute;
     font-size: 20px;
     top: 50%;
     left: 50%;
     margin: -9px;
-}
-.place-menu:hover > .i.fas.fa-check-circle{
-    -webkit-animation: fa-spin 1s ;
-    -moz-animation: fa-spin 1s ;
-    -o-animation: fa-spin 1s;
-    animation: fa-spin 1s;
 }
 .price-place{
     display: flex;
