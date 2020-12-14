@@ -7,7 +7,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    animation: fadeinLoad 2s forwards;
+    animation: fadeinLoad 2.3s forwards;
 }
 .cssload-loader {
 	position: relative;
@@ -435,9 +435,6 @@ i.far.fa-heart{
 i.fas.fa-heart{
     display: none;
 }
-i.far.fa-heart:hover{
-    display: none;
-}
 .far:hover ~ .fas{
     display: block;
     cursor: pointer;
@@ -447,10 +444,16 @@ i.far.fa-heart:hover{
     background: linear-gradient(to bottom, #9356dc 0%,#ff79da 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-   -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color:transparent;
+    animation: heart 1s ease-in-out;
     right: 5%;
-    font-size: 22px;
-    margin: 3px;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-right: 3.3px;
+}
+@keyframes heart {
+   0% { opacity: 0.3;}
+    100% { opacity: 1 ;}
 }
 /*********** test heart end **********/
 .place-footer{
