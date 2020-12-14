@@ -123,26 +123,6 @@
         padding-right: 15px;
         margin-bottom: 10px;
     }
-    .place-menu.first{
-        animation: animDiv 1.2s ease-in-out 0.7s;
-        animation-fill-mode: both;
-    }
-    @keyframes animDiv {
-        0%   {top:10px;
-              opacity:0;
-        }
-        100%  {top:0px;
-               opacity:1;
-        }
-    }
-    .place-menu.second{
-        animation: animDiv 1s ease-in-out 0.9s;
-        animation-fill-mode: both;
-    }
-    .place-menu.third{
-        animation: animDiv 1s ease-in-out 1.3s;
-        animation-fill-mode: both;
-    }
     .place-menu:hover  .check{
         animation: mymove 0.3s linear;
         animation-delay:0s;
@@ -293,7 +273,7 @@
         margin-top: 2px;
     }
     .place-menu.first{
-        animation: animDiv 1.2s ease-in-out 0.7s;
+        animation: animDiv 1s ease-in-out 0.7s;
         animation-fill-mode: both;
     }
     .place-menu.second{

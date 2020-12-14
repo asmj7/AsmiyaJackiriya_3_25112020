@@ -56,7 +56,7 @@ body{
         text-align: center;
         width: 57%;
         margin-top: 30px;
-        padding: 15px 0px;
+        padding: 3px 0px;
         margin-left: auto;
         border-radius: 30px;
         margin-right: auto;
@@ -69,6 +69,7 @@ body{
     }
     .text1{
         margin: 0;
+        padding: 15px 0px;
         margin-left: auto;
         text-align: center;
         color: white;
@@ -111,9 +112,6 @@ body{
         align-items: center;
         box-shadow: 0 3px 11px 0px #C3C3C3;
     }
-    .filtre1:hover, .filtre2:hover, .filtre3:hover{
-        box-shadow: 0 3px 11px 0px #9356DC, 0px -9px 10px -8px #FF79DA;
-    }
     i.fas.fa-list-ul, i.fas.fa-store, i.fas.fa-mobile-alt{
         height: fit-content;
         width: 15%;
@@ -149,9 +147,6 @@ body{
         margin-right: auto;
         width: 90%;
         padding-top: 30px;
-    }
-    .gallery-menu{
-        padding-top: 15px;
     }
     .new{
         padding: 6px 15px;

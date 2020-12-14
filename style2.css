@@ -3,11 +3,11 @@
     background: fixed;
     z-index: 1;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
-    animation: fadeinLoad 1s 2.5s forwards;
+    animation: fadeinLoad 2s forwards;
 }
 .cssload-loader {
 	position: relative;
@@ -227,7 +227,7 @@
       opacity: 1;
     }
     to {
-      opacity: 0;
+        visibility: hidden;
     }
   }
 /*********** loading animation **********************/
@@ -302,7 +302,6 @@ div.first-part{
     text-align: center;
     width: 225px;
     margin-top: 30px;
-    padding: 15px 0px;
     margin-left: auto;
     border-radius: 30px;
     margin-right: auto;
@@ -315,6 +314,7 @@ div.first-part{
 }
 .text1{
     margin: 0;
+    padding: 15px 0px;
     margin-left: auto;
     text-align: center;
     color: white;
@@ -360,9 +360,6 @@ h2{
     border-radius: 25px;
     width: 20%;
     box-shadow: 0 3px 11px 0px #C3C3C3;
-}
-.filtre1:hover, .filtre2:hover, .filtre3:hover{
-    box-shadow: 0 3px 11px 0px #9356DC, 0px -9px 10px -8px #FF79DA;
 }
 i.fas.fa-list-ul, i.fas.fa-store, i.fas.fa-mobile-alt{
     height: fit-content;
@@ -451,8 +448,6 @@ i.far.fa-heart:hover{
     -webkit-background-clip: text;
     -moz-background-clip: text;
    -webkit-text-fill-color:transparent;
-   animation-name: heart;
-   animation: heart 4s ease-in-out;
     right: 5%;
     font-size: 22px;
     margin: 3px;
