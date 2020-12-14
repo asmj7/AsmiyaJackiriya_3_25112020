@@ -71,7 +71,7 @@
 		-moz-animation: cssload-rotate-three 0.9s linear infinite;
 	border-top: 3px solid rgb(153,226,208);
 }
-.loader_bg::before  body{
+.loader_bg:hover  body{
     overflow: hidden;
 }
 
@@ -428,7 +428,7 @@ i.far.fa-heart{
     position: absolute;
     cursor: pointer;
     font-size: 23px;
-    color: unset;
+    color: black;
     margin: 2px;
     right: 5%;
 }
@@ -445,6 +445,9 @@ i.fas.fa-heart{
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color:transparent;
+    /*animation-name: heart;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;*/
     animation: heart 1s ease-in-out;
     right: 5%;
     font-size: 20px;
