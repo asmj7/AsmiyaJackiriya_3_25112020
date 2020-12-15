@@ -435,7 +435,12 @@ i.far.fa-heart{
 i.fas.fa-heart{
     display: none;
 }
-.far:hover ~ .fas{
+i.far.fa-heart:hover{
+    opacity: 0;
+    animation: hearttwo 0.4s linear;
+    /*display: none;*/
+}
+i.far.fa-heart:hover ~ i.fas.fa-heart{
     display: block;
     cursor: pointer;
     position: absolute;
@@ -445,17 +450,17 @@ i.fas.fa-heart{
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color:transparent;
-    /*animation-name: heart;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;*/
     animation: heart 1s ease-in-out;
     right: 5%;
-    font-size: 20px;
-    margin-top: 4px;
-    margin-right: 3.3px;
+    font-size: 22px;
+    margin: 2px;
+}
+@keyframes hearttwo {
+    0% { opacity: 1 ;}
+    100% { opacity: 0 ;}
 }
 @keyframes heart {
-   0% { opacity: 0.3;}
+   0% { opacity: 0 ;}
     100% { opacity: 1 ;}
 }
 /*********** test heart end **********/
