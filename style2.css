@@ -435,11 +435,6 @@ i.far.fa-heart{
 i.fas.fa-heart{
     display: none;
 }
-i.far.fa-heart:hover{
-    opacity: 0;
-    animation: hearttwo 0.4s linear;
-    /*display: none;*/
-}
 i.far.fa-heart:hover ~ i.fas.fa-heart{
     display: block;
     cursor: pointer;
@@ -452,12 +447,9 @@ i.far.fa-heart:hover ~ i.fas.fa-heart{
     -webkit-text-fill-color:transparent;
     animation: heart 1s ease-in-out;
     right: 5%;
-    font-size: 22px;
-    margin: 2px;
-}
-@keyframes hearttwo {
-    0% { opacity: 1 ;}
-    100% { opacity: 0 ;}
+    font-size: 19.5px;
+    margin-top: 4px;
+    margin-right: 4px;
 }
 @keyframes heart {
    0% { opacity: 0 ;}
