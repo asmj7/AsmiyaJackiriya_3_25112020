@@ -112,6 +112,7 @@
         width: 10%;
         top: -12px;
     }
+    /*********** Check div animation ***************/
     .place-menu{
         background-color: white;
         border-radius: 17px;
@@ -123,24 +124,37 @@
         padding-right: 15px;
         margin-bottom: 10px;
     }
+    .check{
+        animation: moveone 0.5s forwards;
+    }
+    @keyframes moveone {
+        from {right: 0px;}
+        to {right: -90px;}
+    }
     .place-menu:hover  .check{
-        animation: mymove 0.3s linear;
-        animation-delay:0s;
+        animation: movetwo 0.3s linear;
         animation-fill-mode: forwards;
     }
-    @keyframes mymove {
+    @keyframes movetwo {
         from {right: -70px;}
         to {right: 0px;}
     }
     .place-menu:hover  p.p-number{
-        animation: movetwo 0.3s linear;
-        animation-delay: 0s;
+        animation: movethree 0.3s linear;
         animation-fill-mode: forwards;
     }
-    @keyframes movetwo { 
+    @keyframes movethree { 
         from {right: 15px;}
         to {right: 22%;}
     }
+    p.p-number{
+        animation: movefour 0.4s forwards;
+    }
+    @keyframes movefour { 
+        from {right: 22%;}
+        to {right: 15px;}
+    }
+    /******************* icon animation *****************/
     i.fas.fa-check-circle{
         color: white;
         position: absolute;
@@ -155,12 +169,13 @@
         -ms-transform:     rotate( 360deg );            
         -o-transform:      rotate( 360deg );            
         -webkit-transform: rotate( 360deg );            
-    transition:             transform 0.6s linear;
-        -moz-transition:    -moz-transform 0.6s linear;
-        -ms-transition:     -ms-transform 0.6s linear;
-        -o-transition:      -o-transform 0.6s linear;
-        -webkit-transition: -webkit-transform 0.6s linear;
+    transition:             transform 0.5s linear;
+        -moz-transition:    -moz-transform 0.5s linear;
+        -ms-transition:     -ms-transform 0.5s linear;
+        -o-transition:      -o-transform 0.5s linear;
+        -webkit-transition: -webkit-transform 0.5s linear;
     }
+    /*********** Text cut animation *************/
     .place-menu:hover  .entree-caption{
         text-overflow: ellipsis;
         overflow: hidden;
