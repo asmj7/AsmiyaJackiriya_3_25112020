@@ -424,39 +424,43 @@ a{
     margin: 0;
     color: #3D8D7A;
 }
-/*************** heart test ***********/
-i.far.fa-heart{
-    position: absolute;
-    cursor: pointer;
+/*************** heart animation **************/
+.fa-heart{
     font-size: 23px;
+  }
+  .heart{
+    position:relative;
+    z-index:1;
     color: black;
-    margin: 2px;
-    right: 5%;
-}
-i.fas.fa-heart{
-    display: none;
-}
-i.far.fa-heart:hover ~ i.fas.fa-heart{
-    display: block;
-    cursor: pointer;
     position: absolute;
-    background:-moz-linear-gradient(top, #9356dc 0%, #ff79da 100%); 
-    background: -webkit-linear-gradient(top, #9356dc 0%,#ff79da 100%); 
-    background: linear-gradient(to bottom, #9356dc 0%,#ff79da 100%);
+    right: 7%;
+    cursor: pointer;
+    
+  }
+  .heart-color{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+    background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    animation: heart 1s ease-in-out;
-    right: 5%;
-    font-size: 19.5px;
-    margin-top: 4px;
-    margin-right: 4px;
-}
-@keyframes heart {
-   0% { opacity: 0 ;}
-    100% { opacity: 1 ;}
-}
-/*********** test heart end **********/
+    -webkit-text-fill-color: transparent;
+    opacity:0;
+    transform: scale(0);
+    transition:.3s ease;
+  }
+  
+  .heart:hover .heart-color{
+    transform:scale(1);
+    opacity:1;
+  }
+  .heart:hover{
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px white;
+  }
+/********** heart animation end ***************/
 .place-footer{
     width: 1214px;
     margin-left: auto;
