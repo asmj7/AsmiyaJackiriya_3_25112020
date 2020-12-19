@@ -125,6 +125,12 @@
         margin-bottom: 10px;
     }
     .check{
+        background-color: #99E2D0;
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        top: 0;
+        right: -90px;
         animation: moveone 0.5s forwards;
     }
     @keyframes moveone {
@@ -136,7 +142,7 @@
         animation-fill-mode: forwards;
     }
     @keyframes movetwo {
-        from {right: -70px;}
+        from {right: -90px;}
         to {right: 0px;}
     }
     .place-menu:hover  p.p-number{
@@ -214,14 +220,6 @@
     div.entrees, div.Plats, div.Desserts{
         width: 30%;
     }
-    div.check{
-        background-color: #99E2D0;
-        position: absolute;
-        height: 100%;
-        width: 20%;
-        top: 0;
-        right: -76px;
-    }
     h3{
         color: black;
         margin-top: 0;
@@ -287,6 +285,7 @@
         font-size: 14px;
         margin-top: 2px;
     }
+    /********** Div appearing animation **********/
     .place-menu.first{
         animation: animDiv 1s ease-in-out 0.7s;
         animation-fill-mode: both;
@@ -322,15 +321,19 @@
         width: 100%;
     }
     div.check{
-        right: -190px;
+        transform: translateX(52%);
     }
     @keyframes mymove {
         from {right: -190px;}
         to {right: 0px;}
     }
     @keyframes movetwo { 
-        from {right: 15px;}
-        to {right: 21%;}
+        from {right: -90px;}
+        to {right: 10%;}
+    }
+    @keyframes moveone {
+        from {right: 10%;}
+        to {right: -90px;}
     }
 }
 
