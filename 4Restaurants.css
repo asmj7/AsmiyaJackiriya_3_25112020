@@ -97,10 +97,6 @@
         margin-bottom: 35px;
         margin-top: 20px;
     }
-    .entree-caption{
-        margin: 0;
-        width: 90%;
-    }
     p.p-number{
         right: 15px;
         display: flex;
@@ -182,11 +178,42 @@
         -webkit-transition: -webkit-transform 0.5s linear;
     }
     /*********** Text cut animation *************/
+    p.entree-caption{
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 90%;
+        animation: textWidthTwo 0.5s linear;
+    }
+    @keyframes textWidthTwo {
+        0% {
+            width: 65%;
+        }
+        50% {
+            width: 85%;
+        }
+        100%{
+            width: 90%;
+        }
+    }
     .place-menu:hover  .entree-caption{
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
         width: 65%;
+        animation: textwidth 0.4s linear;
+    }
+    @keyframes textwidth {
+        0% {
+            width: 90%;
+        }
+        50% {
+            width: 75%;
+        }
+        100% {
+            width: 65%;
+        }
     }
     .place-menu:hover  .menu-title{
         text-overflow: ellipsis;
