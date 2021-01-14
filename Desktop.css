@@ -1,7 +1,6 @@
 /************* HOME PAGE ONLY ***************/
 /*********** loading animation **********************/
 .loader_bg{
-    background: fixed;
     z-index: 10;
     background-color: white;
     position: fixed;
@@ -10,230 +9,42 @@
     height: 100%;
     animation: fadeinLoad 2.3s forwards;
 }
-.cssload-loader {
-	position: relative;
-    left: calc(50% - 31px);
-    top: calc(50% - 31px);
-	width: 62px;
-	height: 62px;
-	border-radius: 50%;
-		-o-border-radius: 50%;
-		-ms-border-radius: 50%;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-	perspective: 780px;
+.loading-spinner{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    /*background-color: teal;*/
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    border-top: 3px solid rgb(146,86,220);
+    border-bottom: 3px solid rgba(255,121,217,0.98);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
 }
-
-.cssload-inner {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-		-o-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-	border-radius: 50%;
-		-o-border-radius: 50%;
-		-ms-border-radius: 50%;
-		-webkit-border-radius: 50%;
-        -moz-border-radius: 50%;	
+.page-name{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 100;
+    font-size: 21px;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 5px);
 }
-
-.cssload-inner.cssload-one {
-	left: 0%;
-	top: 0%;
-	animation: cssload-rotate-one 0.9s linear infinite;
-		-o-animation: cssload-rotate-one 0.9s linear infinite;
-		-ms-animation: cssload-rotate-one 0.9s linear infinite;
-		-webkit-animation: cssload-rotate-one 0.9s linear infinite;
-		-moz-animation: cssload-rotate-one 0.9s linear infinite;
-	border-bottom: 3px solid rgba(255,121,217,0.98);
-}
-
-.cssload-inner.cssload-two {
-	right: 0%;
-	top: 0%;
-	animation: cssload-rotate-two 0.9s linear infinite;
-		-o-animation: cssload-rotate-two 0.9s linear infinite;
-		-ms-animation: cssload-rotate-two 0.9s linear infinite;
-		-webkit-animation: cssload-rotate-two 0.9s linear infinite;
-		-moz-animation: cssload-rotate-two 0.9s linear infinite;
-	border-right: 3px solid rgb(146,86,220);
-}
-
-.cssload-inner.cssload-three {
-	right: 0%;
-	bottom: 0%;
-	animation: cssload-rotate-three 0.9s linear infinite;
-		-o-animation: cssload-rotate-three 0.9s linear infinite;
-		-ms-animation: cssload-rotate-three 0.9s linear infinite;
-		-webkit-animation: cssload-rotate-three 0.9s linear infinite;
-		-moz-animation: cssload-rotate-three 0.9s linear infinite;
-	border-top: 3px solid rgb(153,226,208);
-}
-.loader_bg:hover  body{
-    overflow: hidden;
-}
-
-
-
-
-
-
-@keyframes cssload-rotate-one {
-	0% {
-		transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-	}
-	100% {
-		transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-	}
-}
-
-@-o-keyframes cssload-rotate-one {
-	0% {
-		-o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-	}
-	100% {
-		-o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-	}
-}
-
-@-ms-keyframes cssload-rotate-one {
-	0% {
-		-ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-	}
-	100% {
-		-ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-	}
-}
-
-@-webkit-keyframes cssload-rotate-one {
-	0% {
-		-webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-	}
-	100% {
-		-webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-	}
-}
-
-@-moz-keyframes cssload-rotate-one {
-	0% {
-		-moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-	}
-	100% {
-		-moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-	}
-}
-
-@keyframes cssload-rotate-two {
-	0% {
-		transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-	}
-	100% {
-		transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-	}
-}
-
-@-o-keyframes cssload-rotate-two {
-	0% {
-		-o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-	}
-	100% {
-		-o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-	}
-}
-
-@-ms-keyframes cssload-rotate-two {
-	0% {
-		-ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-	}
-	100% {
-		-ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-	}
-}
-
-@-webkit-keyframes cssload-rotate-two {
-	0% {
-		-webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-	}
-	100% {
-		-webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-	}
-}
-
-@-moz-keyframes cssload-rotate-two {
-	0% {
-		-moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-	}
-	100% {
-		-moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-	}
-}
-
-@keyframes cssload-rotate-three {
-	0% {
-		transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-	}
-	100% {
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-	}
-}
-
-@-o-keyframes cssload-rotate-three {
-	0% {
-		-o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-	}
-	100% {
-		-o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-	}
-}
-
-@-ms-keyframes cssload-rotate-three {
-	0% {
-		-ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-	}
-	100% {
-		-ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-	}
-}
-
-@-webkit-keyframes cssload-rotate-three {
-	0% {
-		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-	}
-	100% {
-		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-	}
-}
-
-@-moz-keyframes cssload-rotate-three {
-	0% {
-		-moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-	}
-	100% {
-		-moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-	}
-}
-@-webkit-keyframes fadeinLoad {
-    from {
-      opacity: 1;
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-    to {
-      opacity: 0;
-    }
-  }
-  @keyframes fadeinLoad {
+}
+@keyframes fadeinLoad {
     from {
       opacity: 1;
     }
     to {
         visibility: hidden;
     }
-  }
+}
 /*********** loading animation **********************/
-
-
 
 /***************** HOME PAGE'S MEDIA QUERY ************/
 a{
@@ -425,38 +236,39 @@ a{
     color: #3D8D7A;
 }
 /*************** heart animation **************/
-.fa-heart{
-    font-size: 23px;
-  }
-  .heart{
+.heart{
     z-index:1;
+    font-size: 23px;
     color: black;
     position: absolute;
     right: 7%;
-    cursor: pointer;
-    
+    cursor: pointer; 
   }
   .heart-color{
-    position:absolute;
-    left:0;
-    z-index:-1;
-    background: linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity:0;
-    transform: scale(0);
-    transition:.3s ease;
-  }
-  
-  .heart:hover .heart-color{
-    transform:scale(1);
-    opacity:1;
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
   }
   .heart:hover{
+      -webkit-text-stroke: 0.2px white;
+  }
+  .heart:hover .heart-color{
+    position:absolute;
+    left:0;
+    opacity: 1;
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0px white;
+    animation: heart 0.4s linear;
+    z-index: 2;
+  }
+  @keyframes heart {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
   }
 /********** heart animation end ***************/
 .place-footer{
